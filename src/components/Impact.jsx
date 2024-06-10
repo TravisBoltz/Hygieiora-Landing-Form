@@ -28,7 +28,7 @@ const Impact = () => {
   if (!isDesktop) return null; // Render nothing if not on a desktop device
 
   return (
-    <div className="min-h-screen flex flex-col justify-center  px-5">
+    <div className="min-h-screen flex flex-col justify-center px-5">
       <div className="flex flex-col items-center">
         <div>
           <h1 className="text-backgroundColor text-4xl font-semibold text-center lg:text-start">
@@ -42,11 +42,15 @@ const Impact = () => {
                 const x = radius * Math.cos((angle * Math.PI) / 180);
                 const y = radius * Math.sin((angle * Math.PI) / 180);
                 return (
-                  <img
+                  <motion.img
                     key={index}
                     src={image}
                     alt={`Volunteer activity ${index + 1}`}
                     className="absolute rounded-full"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    whileHover={{ scale: 1.1 }} // Zoom effect on hover
+                    transition={{ duration: 0.2 }} // Transition duration for zoom effect
                     style={{
                       left: `calc(50% + ${x}px - 120px)`,
                       top: `calc(50% + ${y}px - 80px)`,
@@ -58,7 +62,7 @@ const Impact = () => {
               })}
             </div>
           </div>
-          <div className="mt-4 text-xl text-center flex flex-col justify-center items-center px-4">
+          <div className="mt-4 mb-20 text-xl text-center flex flex-col justify-center items-center px-4">
             <AnimatePresence mode="wait">
               <motion.p
                 key={step}
