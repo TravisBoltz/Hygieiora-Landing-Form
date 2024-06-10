@@ -4,18 +4,14 @@ import img13 from "../assets/program/13.jpg";
 import img9 from "../assets/program/9.jpg";
 import img10 from "../assets/program/10.jpg";
 import img11 from "../assets/program/11.jpg";
-import { useMediaQuery } from 'react-responsive';
+import { useMediaQuery } from "react-responsive";
 
 const Impact = () => {
   const images = [img13, img9, img10, img11];
   const [step, setStep] = useState(0);
   const [shuffledImages, setShuffledImages] = useState(images);
 
-  const steps = [
-    "Who we are?",
-    "What we stand for?",
-    "How you can get involved?",
-  ];
+  const steps = ["How it all started?", "Who we are?", "Meet the team"];
 
   useEffect(() => {
     const stepInterval = setInterval(() => {
@@ -47,7 +43,8 @@ const Impact = () => {
       <div className="flex flex-col items-center">
         <div>
           <h1 className="text-backgroundColor text-4xl font-semibold text-center lg:text-start">
-            Hycares Volunteers
+            Hycares
+            <br /> Teams
           </h1>
           <div className="mt-10 grid grid-cols-2 grid-rows-2 gap-4">
             <AnimatePresence>
