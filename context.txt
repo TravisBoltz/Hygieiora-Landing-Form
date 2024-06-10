@@ -1,0 +1,128 @@
+extend: {
+    colors: {
+      hoverColor: "#FFC000",
+      brightColor: "#dd8036",
+      backgroundColor: "#36ae9a",
+    },
+  },
+
+  Hygieiora
+
+  #Home Section 
+  Empowering Health Choices for a Vibrant Life Your Trusted..
+
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam magnam omnis natus accusantium quos. Reprehenderit incidunt expedita molestiae impedit at sequi dolorem iste sit culpa, optio voluptates fugiat vero consequatur?
+
+
+  #About Section 
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam
+  labore rerum tempore tenetur commodi natus quos itaque voluptatum
+  repudiandae nostrum accusantium vero voluptate aspernatur totam,
+  laboriosam aut, et quae consequatur?
+
+  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora quia
+  suscipit illum, numquam incidunt nostrum dolor officia doloremque
+  cupiditate, placeat explicabo sed iure atque neque quidem ipsam!
+  Dolor, minus reiciendis.
+
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, illum.
+  Accusantium ab expedita veniam nobis aut, in rerum repellendus!
+  Exercitationem libero recusandae corrupti accusantium reiciendis in
+  placeat illo maxime ea.
+
+
+  
+  #Services section 
+
+  Lab Test
+
+  Health Check
+
+  Heart Health
+
+
+  #Doctors section 
+  const data = [
+    {
+      img: "/src/assets/img/doc1.jpg",
+      name: "Dr. Serena Mitchell",
+      specialties: "Orthopedic Surgeon",
+    },
+    {
+      img: "/src/assets/img/doc2.jpg",
+      name: "Dr. Julian Bennett",
+      specialties: "Cardiologist",
+    },
+    {
+      img: "/src/assets/img/doc3.jpg",
+      name: "Dr. Camila Rodriguez",
+      specialties: "Pediatrician",
+    },
+    {
+      img: "/src/assets/img/doc4.jpg",
+      name: "Dr. Victor Nguyen",
+      specialties: "Neurologist",
+    },
+    {
+      img: "/src/assets/img/doc5.jpg",
+      name: "Dr. Ethan Carter",
+      specialties: "Dermatologist",
+    },
+    {
+      img: "/src/assets/img/doc6.jpg",
+      name: "Dr. Olivia Martinez",
+      specialties: "Ophthalmologist",
+    },
+  ];
+
+
+  #Blog section 
+
+  Unraveling the Mysteries of Sleep
+
+  The Heart-Healthy Diet 
+
+  Understanding Pediatric Vaccinations
+
+  Navigating Mental Health
+
+  The Importance of Regular Exercise
+
+  Skin Health 101
+
+
+
+  #Footer section
+
+  Our team of dedicated doctors, each specializing in unique fields such as orthopedics, cardiology, pediatrics, neurology, dermatology, and more.
+
+  123 Elm Street, Suite 456 Springfield, IL 62701 United States
+
+  support@care.com
+
+  +123-456-7890
+  ##########################################
+  Sure, I can help you create a context for your mental healthcare website, Hygieiora, that encourages users to apply for early access participation. Here's a suggestion:
+
+# Home Section
+Welcome to **Hygieiora** - Your trusted partner in mental health care. We're dedicated to empowering your health choices for a vibrant life. We believe in the power of understanding and managing your mental health, and we're here to support you every step of the way. Sign up now for early access participation and start your journey towards better mental health.
+
+# About Section
+At Hygieiora, we're committed to providing comprehensive mental health services that are accessible, inclusive, and personalized. Our team of experienced professionals is dedicated to understanding and meeting your unique needs. We believe that everyone deserves access to quality mental health care, and we're here to make that a reality.
+
+# Services Section
+We offer a range of services tailored to your mental health needs:
+- **Therapy Sessions**: Understand your mental health better with our specialized therapy sessions.
+- **Mindfulness Programs**: Regular health checks to monitor your progress and adjust your care plan as needed.
+- **Heart Health**: Because mental health and physical health are interconnected, we offer heart health services to ensure you're taking care of your whole self.
+
+# Doctors Section
+Meet our team of dedicated doctors, each specializing in unique fields such as orthopedics, cardiology, pediatrics, neurology, dermatology, and more. They're here to provide you with the care and support you need.
+
+# Blog Section
+Stay informed and empowered with our regularly updated blog. We cover a range of topics from unraveling the mysteries of sleep, understanding pediatric vaccinations, navigating mental health, the importance of regular exercise, to skin health 101.
+
+# Footer Section
+We're here for you. Reach out to our team at any time at support@care.com or call us at +123-456-7890. Our office is located at 123 Elm Street, Suite 456, Springfield, IL 62701, United States.
+
+Remember, at Hygieiora, your mental health is our priority. Sign up today for early access participation and take the first step towards better mental health. We look forward to supporting you on your journey.
