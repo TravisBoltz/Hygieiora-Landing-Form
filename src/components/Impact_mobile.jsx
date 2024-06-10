@@ -9,6 +9,7 @@ import { useMediaQuery } from 'react-responsive';
 const Impact = () => {
   const images = [img13, img9, img10, img11];
   const [step, setStep] = useState(0);
+  const [shuffledImages, setShuffledImages] = useState(images);
 
   const steps = [
     "Who we are?",
@@ -23,40 +24,44 @@ const Impact = () => {
     return () => clearInterval(stepInterval);
   }, []);
 
-  const isDesktop = useMediaQuery({ minWidth: 768 }); // Adjust min width according to your definition of desktop
+  useEffect(() => {
+    const shuffleInterval = setInterval(() => {
+      setShuffledImages((prevImages) => {
+        const newImages = [...prevImages];
+        for (let i = newImages.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [newImages[i], newImages[j]] = [newImages[j], newImages[i]];
+        }
+        return newImages;
+      });
+    }, 4000); // Change image positions every 4 seconds
+    return () => clearInterval(shuffleInterval);
+  }, []);
 
-  if (!isDesktop) return null; // Render nothing if not on a desktop device
+  const isMobile = useMediaQuery({ maxWidth: 767 }); // Adjust max width according to your definition of mobile
+
+  if (!isMobile) return null; // Render nothing if not on a mobile device
 
   return (
-    <div className="min-h-screen flex flex-col justify-center  px-5">
+    <div className="min-h-screen flex flex-col justify-center px-5">
       <div className="flex flex-col items-center">
         <div>
           <h1 className="text-backgroundColor text-4xl font-semibold text-center lg:text-start">
             Hycares Volunteers
           </h1>
-          <div className="mt-10 flex justify-center items-center relative">
-            <div>
-              {images.map((image, index) => {
-                const angle = (360 / images.length) * index;
-                const radius = 300; // Radius of the circle
-                const x = radius * Math.cos((angle * Math.PI) / 180);
-                const y = radius * Math.sin((angle * Math.PI) / 180);
-                return (
-                  <img
-                    key={index}
-                    src={image}
-                    alt={`Volunteer activity ${index + 1}`}
-                    className="absolute rounded-full"
-                    style={{
-                      left: `calc(50% + ${x}px - 120px)`,
-                      top: `calc(50% + ${y}px - 80px)`,
-                      width: "250px",
-                      height: "250px",
-                    }}
-                  />
-                );
-              })}
-            </div>
+          <div className="mt-10 grid grid-cols-2 grid-rows-2 gap-4">
+            <AnimatePresence>
+              {shuffledImages.map((image, index) => (
+                <motion.img
+                  key={index}
+                  src={image}
+                  alt={`Volunteer activity ${index + 1}`}
+                  className="rounded-lg w-full h-full object-cover"
+                  layout
+                  transition={{ duration: 1.5, ease: "easeInOut" }}
+                />
+              ))}
+            </AnimatePresence>
           </div>
           <div className="mt-4 text-xl text-center flex flex-col justify-center items-center px-4">
             <AnimatePresence mode="wait">

@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import About from "./components/About";
 import Impact from "./components/Impact";
+import Impact_mobile from "./components/Impact_mobile";
 // import Doctors from "./components/Doctors";
 // import Blogs from "./components/Blogs";
 import Footer from "./components/Footer";
@@ -24,6 +25,9 @@ const App = () => {
         <div id="impact">
           <Impact />
         </div>
+        <div id="impact">
+          <Impact_mobile />
+          </div>
         {/* <div id="form">
           <MyForm />
         </div> */}
