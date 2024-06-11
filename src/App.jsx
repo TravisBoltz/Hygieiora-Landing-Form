@@ -7,7 +7,7 @@ import Impact_mobile from "./components/Impact_mobile";
 // import Doctors from "./components/Doctors";
 // import Blogs from "./components/Blogs";
 import Footer from "./components/Footer";
-
+// import Volunteers from "./components/volunteers";
 const App = () => {
   return (
     <div>
@@ -21,13 +21,16 @@ const App = () => {
         <div id="about">
           <About />
         </div>
-
+        {/* <div id="story">
+          <Volunteers/>
+        </div> */}
         <div id="impact">
           <Impact />
         </div>
+       
         <div id="impact">
           <Impact_mobile />
-          </div>
+        </div>
         {/* <div id="form">
           <MyForm />
         </div> */}
@@ -38,7 +41,7 @@ const App = () => {
         {/* <div id="blog">
           <Blogs />
         </div> */}
-         {/* <div id="blog">
+        {/* <div id="blog">
           <Blogs />
         </div> */}
       </main>

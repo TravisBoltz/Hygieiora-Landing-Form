@@ -43,8 +43,9 @@ const Impact = () => {
       <div className="flex flex-col items-center">
         <div>
           <h1 className="text-backgroundColor text-4xl font-semibold text-center lg:text-start">
-            Hycares
-            <br /> Teams
+            Meet the <br />
+            Volunteering <br />
+            Team
           </h1>
           <div className="mt-10 grid grid-cols-2 grid-rows-2 gap-4">
             <AnimatePresence>

@@ -1,25 +1,16 @@
 /* eslint-disable react/no-unescaped-entities */
 import { useState } from "react";
 import { Typewriter } from 'react-simple-typewriter';
-import Contact from "../models/Contact";
 
-const Home = () => {
-  const [showModal, setShowModal] = useState(false);
+const Volunteers = () => {
 
-  const handleApplyNowClick = () => {
-    setShowModal(true);
-  };
-
-  const handleCloseForm = () => {
-    setShowModal(false);
-  };
 
   return (
-    <div className="min-h-screen flex flex-col justify-center lg:px-32 px-5 text-white bg-[url('assets/img/2.jpg')] bg-no-repeat bg-cover bg-center opacity-90">     
-     <div className="w-full lg:w-4/5 space-y-5 mt-10">
+    <div className="min-h-screen flex flex-col justify-center lg:px-32 px-5 text-white bg-[url('assets/program/13.jpg')] bg-no-repeat bg-cover bg-center opacity-90">     
+      <div className="w-full lg:w-4/5 space-y-5 mt-10">
         <h1 className="text-5xl font-bold leading-tight text-shadow">
           <Typewriter
-            words={['Empowering Minds for a Balanced Life', 'Your Trusted Partner in Mental Health']}
+            words={['Meet the Volunteering Team']}
             loop={false}
             cursor
             cursorStyle='_'
@@ -38,16 +29,10 @@ const Home = () => {
             better mental health.
           </span>
         </p>
-        <button
-          className="bg-white text-backgroundColor font-bold px-4 py-2 rounded-md hover:bg-hoverColor transition duration-300 ease-in-out"
-          onClick={handleApplyNowClick}
-        >
-          Join the Campaign
-        </button>
+       
       </div>
-      {showModal && <Contact closeForm={handleCloseForm} />}
     </div>
   );
 };
 
-export default Home;
+export default Volunteers;

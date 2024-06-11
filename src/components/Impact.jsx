@@ -26,9 +26,9 @@ const Impact = () => {
   return (
     <div className="min-h-screen flex flex-col justify-center px-5">
       <div className="flex flex-col items-center">
-        <div className="mt-20">
-          <h1 className="text-backgroundColor text-4xl font-semibold text-center lg:text-start">
-            Hycares Team
+        <div className="">
+          <h1 className="text-backgroundColor mt-20 text-4xl font-semibold text-center lg:text-start">
+          Meet the <br/>Volunteering <br/>Team
           </h1>
           <div className="mt-10 flex justify-center items-center relative">
             <div>
@@ -49,7 +49,7 @@ const Impact = () => {
                     transition={{ duration: 0.2 }} // Transition duration for zoom effect
                     style={{
                       left: `calc(50% + ${x}px - 120px)`,
-                      top: `calc(50% + ${y}px - 120px)`,
+                      top: `calc(50% + ${y}px - 180px)`,
                       width: "250px",
                       height: "250px",
                     }}

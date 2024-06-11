@@ -38,7 +38,15 @@ const Navbar = () => {
           </div>
 
           <nav className=" hidden lg:flex flex-row items-center text-lg font-medium gap-8">
-          
+          <Link
+              to="home"
+              spy={true}
+              smooth={true}
+              duration={500}
+              className=" hover:text-hoverColor transition-all cursor-pointer"
+            >
+              Home
+            </Link>
             <Link
               to="about"
               spy={true}
@@ -93,7 +101,15 @@ const Navbar = () => {
             menu ? "translate-x-0" : "-translate-x-full"
           } lg:hidden flex flex-col absolute bg-backgroundColor text-white left-0 top-16 font-semibold text-2xl text-center pt-8 pb-4 gap-8 w-full h-[100vh] transition-transform duration-300`}
         >
-     
+        <Link
+              to="home"
+              spy={true}
+              smooth={true}
+              duration={500}
+              className=" hover:text-hoverColor transition-all cursor-pointer"
+            >
+              Home
+            </Link>
           <Link
             to="about"
             spy={true}
