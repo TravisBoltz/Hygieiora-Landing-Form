@@ -1,4 +1,4 @@
-import  { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-scroll";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import Contact from "../models/Contact";
@@ -38,12 +38,12 @@ const Navbar = () => {
           </div>
 
           <nav className=" hidden lg:flex flex-row items-center text-lg font-medium gap-8">
-          <Link
+            <Link
               to="home"
               spy={true}
               smooth={true}
               duration={500}
-              className=" hover:text-hoverColor transition-all cursor-pointer"
+              className=" hover:text-hoverColor hover:text-white  transition-all cursor-pointer"
             >
               Home
             </Link>
@@ -52,34 +52,33 @@ const Navbar = () => {
               spy={true}
               smooth={true}
               duration={500}
-              className=" hover:text-hoverColor transition-all cursor-pointer"
+              className=" hover:text-hoverColor hover:text-white  transition-all cursor-pointer"
             >
               About Us
-            </Link>
-            <Link
-              to="impact"
-              spy={true}
-              smooth={true}
-              duration={500}
-              className=" hover:text-hoverColor transition-all cursor-pointer"
-            >
-              Our Impact
             </Link>
             <Link
               to="story"
               spy={true}
               smooth={true}
               duration={500}
-              className=" hover:text-hoverColor transition-all cursor-pointer"
+              className=" hover:text-hoverColor hover:text-white  transition-all cursor-pointer"
             >
               Our Story
             </Link>
-        
+            <Link
+              to="impact"
+              spy={true}
+              smooth={true}
+              duration={500}
+              className=" hover:text-hoverColor hover:text-white  transition-all cursor-pointer"
+            >
+              Our Impact
+            </Link>
           </nav>
 
           <div className=" hidden lg:flex">
             <button
-              className="bg-brightColor text-backgroundColor font-semibold px-4 py-2 rounded-md hover:bg-hoverColor transition duration-300 ease-in-out"
+              className="bg-brightColor text-backgroundColor font-semibold px-4 py-2 rounded-md hover:bg-hoverColor hover:text-white hover:border-white hover:border-2 transition duration-300 ease-in-out"
               onClick={openForm}
             >
               Join Our Volunteers{" "}
@@ -101,50 +100,49 @@ const Navbar = () => {
             menu ? "translate-x-0" : "-translate-x-full"
           } lg:hidden flex flex-col absolute bg-backgroundColor text-white left-0 top-16 font-semibold text-2xl text-center pt-8 pb-4 gap-8 w-full h-[100vh] transition-transform duration-300`}
         >
-        <Link
-              to="home"
-              spy={true}
-              smooth={true}
-              duration={500}
-              className=" hover:text-hoverColor transition-all cursor-pointer"
-            >
-              Home
-            </Link>
+          <Link
+            to="home"
+            spy={true}
+            smooth={true}
+            duration={500}
+            className=" hover:text-hoverColor hover:text-white  transition-all cursor-pointer"
+          >
+            Home
+          </Link>
           <Link
             to="about"
             spy={true}
             smooth={true}
             duration={500}
-            className=" hover:text-hoverColor transition-all cursor-pointer"
+            className=" hover:text-hoverColor hover:text-white  transition-all cursor-pointer"
             onClick={closeMenu}
           >
             About Us
-          </Link>
-          <Link
-            to="impact"
-            spy={true}
-            smooth={true}
-            duration={500}
-            className=" hover:text-hoverColor transition-all cursor-pointer"
-            onClick={closeMenu}
-          >
-            Our Impact
           </Link>
           <Link
             to="story"
             spy={true}
             smooth={true}
             duration={500}
-            className=" hover:text-hoverColor transition-all cursor-pointer"
+            className=" hover:text-hoverColor hover:text-white  transition-all cursor-pointer"
             onClick={closeMenu}
           >
             Our Story
           </Link>
-         
+          <Link
+            to="impact"
+            spy={true}
+            smooth={true}
+            duration={500}
+            className=" hover:text-hoverColor hover:text-white  transition-all cursor-pointer"
+            onClick={closeMenu}
+          >
+            Our Impact
+          </Link>
 
           <div className=" lg:hidden">
             <button
-              className="bg-white text-backgroundColor px-4 py-2 rounded-md hover:bg-hoverColor transition duration-300 ease-in-out"
+              className="bg-white text-backgroundColor px-4 py-2 rounded-md hover:bg-hoverColor hover:text-white hover:border-white hover:border-2 transition duration-300 ease-in-out"
               onClick={openForm}
             >
               Apply Now{" "}

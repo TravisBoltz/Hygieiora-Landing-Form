@@ -27,7 +27,7 @@ const Impact = () => {
     <div className="min-h-screen flex flex-col justify-center px-5">
       <div className="flex flex-col items-center">
         <div className="">
-          <h1 className="text-backgroundColor mt-20 text-4xl font-semibold text-center lg:text-start">
+          <h1 className="text-backgroundColor  flex mt-20 text-4xl font-semibold text-center lg:text-start">
           Meet the <br/>Volunteering <br/>Team
           </h1>
           <div className="mt-10 flex justify-center items-center relative">

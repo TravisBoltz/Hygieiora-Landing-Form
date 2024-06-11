@@ -39,7 +39,7 @@ const Home = () => {
           </span>
         </p>
         <button
-          className="bg-white text-backgroundColor font-bold px-4 py-2 rounded-md hover:bg-hoverColor transition duration-300 ease-in-out"
+          className="bg-white text-backgroundColor font-bold px-4 py-2 rounded-md hover:bg-hoverColor hover:text-white transition duration-300 ease-in-out"
           onClick={handleApplyNowClick}
         >
           Join the Campaign
