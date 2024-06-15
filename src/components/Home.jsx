@@ -28,7 +28,7 @@ const Home = () => {
             delaySpeed={1000}
           />
         </h1>
-        <p>
+        <p className=" text-xl">
           Welcome to Hygieiora - Your trusted partner in mental health care.
           We're dedicated to empowering your health choices for a vibrant life.
           <span className="hidden md:block">

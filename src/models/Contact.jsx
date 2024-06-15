@@ -179,15 +179,15 @@ const Contact = ({ closeForm }) => {
                 pattern="[0-9]*" // Accept only numbers
               />
             </div>
-            <div className=" flex gap-5">
+            <div className=" flex justify-center  gap-5">
               <button
-                className="bg-brightColor text-white px-4 py-2 rounded-md hover:bg-hoverColor transition duration-300 ease-in-out"
+                className="bg-backgroundColor text-white px-4 py-2 rounded-md hover:bg-hoverColor transition duration-300 ease-in-out"
                 type="submit"
               >
                 Application
               </button>{" "}
               <button
-                className=" bg-backgroundColor text-white px-10 rounded-md active:bg-red-500"
+                className=" bg-red-500 text-white px-10 rounded-md active:bg-red-500"
                 onClick={closeForm}
               >
                 Close
