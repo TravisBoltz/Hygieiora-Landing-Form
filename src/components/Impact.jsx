@@ -48,10 +48,10 @@ const Impact = () => {
                     whileHover={{ scale: 1.1 }} // Zoom effect on hover
                     transition={{ duration: 0.2 }} // Transition duration for zoom effect
                     style={{
-                      left: `calc(50% + ${x}px - 120px)`,
+                      left: `calc(50% + ${x}px - 100px)`,
                       top: `calc(50% + ${y}px - 180px)`,
-                      width: "250px",
-                      height: "250px",
+                      width: "230px",
+                      height: "220px",
                     }}
                   />
                 );
